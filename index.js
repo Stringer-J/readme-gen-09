@@ -51,4 +51,4 @@ inquirer
       name: 'questions',
       message: ''
     }
-  ]);
+  ]).then((info) => console.log(info));
