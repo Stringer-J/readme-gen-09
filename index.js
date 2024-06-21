@@ -1,4 +1,9 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
+
+const writeReadme = (info) => {
+  fs.writeFile('READMEtest.md', info, (err) => err ? console.error(err) : console.log('README created'))
+}
 
 inquirer
   .prompt([
@@ -51,4 +56,7 @@ inquirer
       name: 'questions',
       message: ''
     }
-  ]).then((info) => console.log(info));
+  ]).then((info) => {
+    console.log(info);
+    writeReadme(JSON.stringify(info));
+  })
