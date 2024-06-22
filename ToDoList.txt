@@ -7,7 +7,8 @@ Format the answers
     1. basic formatting achieved
     2. sorted out the exact formatting I wanted
     3. need to make the table of contents section links
-    4. 
+    4. added the links but they don't do anything yet
+    5. finally got the links working [section](#link)
 
 Generate readme with the answers
     1. readme generates with answers object

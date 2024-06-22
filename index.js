@@ -4,13 +4,13 @@ const fs = require('fs');
 const generateReadme = ({title, description, installation, usage, credits, license, tests, email}) =>
   `# ${title}\n
 ## *Table Of Contents:*
-[1. Description](#Description:)\n
-[2. Installation](#Installation:)\n
-[3. Usage](#Usage:)\n
-[4. Credits](#Credits:)\n
-[5. License](#License:)\n
-[6. Tests](#Tests:)\n
-[7. Questions](#Questions:)\n
+[1. Description](#description)\n
+[2. Installation](#installation)\n
+[3. Usage](#usage)\n
+[4. Credits](#credits)\n
+[5. License](#license)\n
+[6. Tests](#tests)\n
+[7. Questions](#questions)\n
 ## *Description:* 
 ${description}\n
 ## *Installation:* 

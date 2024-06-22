@@ -1,19 +1,19 @@
 # 
 
 ## *Table Of Contents:*
-[1. Description](#Description:)
+[1. Description](#description)
 
-[2. Installation](#Installation:)
+[2. Installation](#installation)
 
-[3. Usage](#Usage:)
+[3. Usage](#usage)
 
-[4. Credits](#Credits:)
+[4. Credits](#credits)
 
-[5. License](#License:)
+[5. License](#license)
 
-[6. Tests](#Tests:)
+[6. Tests](#tests)
 
-[7. Questions](#Questions:)
+[7. Questions](#questions)
 
 ## *Description:* 
 
