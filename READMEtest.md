@@ -1,16 +1,37 @@
-# README Generator
+# 
 
-### *Description:* 
-Example of a readme generator
+## *Table Of Contents:*
+[1. Description](#Description:)
 
-### *Installation:* 
-N/A
+[2. Installation](#Installation:)
 
-### *Usage:* 
-You run the code and generate a readme
+[3. Usage](#Usage:)
 
-### *Credits:* 
-Josh Stringer
+[4. Credits](#Credits:)
 
-### *License:* 
-MIT
+[5. License](#License:)
+
+[6. Tests](#Tests:)
+
+[7. Questions](#Questions:)
+
+## *Description:* 
+
+
+## *Installation:* 
+
+
+## *Usage:* 
+
+
+## *Credits:* 
+
+
+## *License:* 
+
+
+## *Tests:*
+
+
+## *Questions:*
+Reach out to  for further questions

@@ -6,7 +6,8 @@ Get terminal to ask appropriate questions
 Format the answers
     1. basic formatting achieved
     2. sorted out the exact formatting I wanted
-DONE====================================================================
+    3. need to make the table of contents section links
+    4. 
 
 Generate readme with the answers
     1. readme generates with answers object
