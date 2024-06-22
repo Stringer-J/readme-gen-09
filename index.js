@@ -5,6 +5,7 @@ const writeReadme = (info) => {
   fs.writeFile('READMEtest.md', info, (err) => err ? console.error(err) : console.log('README created'))
 }
 
+
 inquirer
   .prompt([
     {
@@ -58,5 +59,5 @@ inquirer
     }
   ]).then((info) => {
     console.log(info);
-    writeReadme(JSON.stringify(info));
+    writeReadme(info.title);
   })
