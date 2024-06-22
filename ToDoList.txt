@@ -2,7 +2,8 @@ Get terminal to ask appropriate questions
     1. terminal asks the questions but needs to be better written
     2. why do i need a table of contents and what is 'tests' and 'questions' for?
     3. 'license' has to be a list not an input
-    4. 
+    4. 'license' is now a list, have to add badge if statement
+    5. 
 
 Format the answers
     1. basic formatting achieved

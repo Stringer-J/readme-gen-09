@@ -1,5 +1,7 @@
 # 
 
+![ISC logo](/isclicenselogo.png)
+
 ## *Table Of Contents:*
 [1. Description](#description)
 
@@ -28,7 +30,7 @@
 
 
 ## *License:* 
-Woah
+ISC
 
 ## *Tests:*
 

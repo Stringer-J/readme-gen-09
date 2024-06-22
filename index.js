@@ -1,8 +1,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateReadme = ({title, description, installation, usage, credits, license, tests, email}) =>
+const generateReadme = ({title, description, installation, usage, credits, license,logo, tests, email}) =>
   `# ${title}\n
+${logo}\n
 ## *Table Of Contents:*
 [1. Description](#description)\n
 [2. Installation](#installation)\n
@@ -73,17 +74,19 @@ inquirer
       name: 'email',
       message: 'Enter email address:'
     }
-  ]).then((info) => {
-    
-    if (info.license === 'Microsoft Public License') {
-      info.license = 'Microsoft Public License';
-    } else if (info.license === 'MIT') {
-      info.license = 'MIT';
+    ]).then((info) => {
+
+    const info2 = Object.assign({}, info, {logo: ''});
+
+    if (info2.license === 'Microsoft Public License') {
+      info2.logo = '![MPL Logo](/microsoftpubliclicense.png)';
+    } else if (info2.license === 'MIT') {
+      info2.logo = '![MIT Logo](/mitlicenselogo.png)';
     } else {
-      info.license = 'ISC';
+      info2.logo = '![ISC logo](/isclicenselogo.png)';
     }
 
-    const readMeContent = generateReadme(info);
+    const readMeContent = generateReadme(info2);
 
     fs.writeFile('READMEtest.md', readMeContent, (err) => err ? console.log(err) : console.log('README created')
     ); 
