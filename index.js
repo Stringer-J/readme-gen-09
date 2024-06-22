@@ -1,6 +1,7 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
+const inquirer = require('inquirer'); //needed to use inquirer
+const fs = require('fs'); //needed to use fs
 
+//function that basically creates the entire readme. is used later after user input to finish the document
 const generateReadme = ({title, description, installation, usage, credits, license,logo, tests, user,  email}) =>
   `# ${title}\n
 ${logo}\n
@@ -28,7 +29,7 @@ ${tests}\n
 [${user}'s GitHub page](https://github.com/${user})\n
 Reach out to ${email} for further questions`;
 
-inquirer
+inquirer //asks a bunch of questions when you run index.js
   .prompt([
     {
       message: 'Welcome to the README generator! Press ENTER to continue...',
@@ -80,11 +81,11 @@ inquirer
       name: 'email',
       message: 'Enter email address:'
     }
-    ]).then((info) => {
+    ]).then((info) => { //takes the answers and throws them into an object
 
-    const info2 = Object.assign({}, info, {logo: ''});
+    const info2 = Object.assign({}, info, {logo: ''}); //adds a logo parameter to the object after inquirer is done because i didn't know how to have a parameter in the initial prompt without it asking a question that didn't need to be asked
 
-    if (info2.license === 'Microsoft Public License') {
+    if (info2.license === 'Microsoft Public License') { //checks to see what license you picked, then shows that license's logo
       info2.logo = '![MPL Logo](/microsoftpubliclicense.png)';
     } else if (info2.license === 'MIT') {
       info2.logo = '![MIT Logo](/mitlicenselogo.png)';
@@ -92,8 +93,7 @@ inquirer
       info2.logo = '![ISC logo](/isclicenselogo.png)';
     }
 
-    const readMeContent = generateReadme(info2);
+    const readMeContent = generateReadme(info2); //makes the page with the user input
 
-    fs.writeFile('READMEtest.md', readMeContent, (err) => err ? console.log(err) : console.log('README created')
-    ); 
+    fs.writeFile('READMEtest.md', readMeContent, (err) => err ? console.log(err) : console.log('README created')); //creates the actual md file
   });
