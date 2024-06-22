@@ -53,9 +53,10 @@ inquirer
       message: 'How do you use this repository? '
     },
     {
-      type: 'input',
+      type: 'list',
       name: 'license',
-      message: 'What license does this repository use? '
+      message: 'What license does this repository use? ',
+      choices: ['Microsoft Public License', 'MIT', 'ISC']
     },
     {
       type: 'input',
@@ -73,6 +74,15 @@ inquirer
       message: 'Enter email address:'
     }
   ]).then((info) => {
+    
+    if (info.license === 'Microsoft Public License') {
+      info.license = 'Microsoft Public License';
+    } else if (info.license === 'MIT') {
+      info.license = 'MIT';
+    } else {
+      info.license = 'ISC';
+    }
+
     const readMeContent = generateReadme(info);
 
     fs.writeFile('READMEtest.md', readMeContent, (err) => err ? console.log(err) : console.log('README created')
