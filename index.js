@@ -1,8 +1,16 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateReadme = ({title, description, installation, usage, credits, license}) =>
+const generateReadme = ({title, description, installation, usage, credits, license, tests, email}) =>
   `# ${title}\n
+## *Table Of Contents:*
+1. Description
+2. Installation
+3. Usage
+4. Credits
+5. License
+6. Tests
+7. Questions\n
 ### *Description:* 
 ${description}\n
 ### *Installation:* 
@@ -12,7 +20,11 @@ ${usage}\n
 ### *Credits:* 
 ${credits}\n
 ### *License:* 
-${license}`;
+${license}\n
+### *Tests:*
+${tests}\n
+### *Questions:*
+Reach out to ${email} for further questions`;
 
 inquirer
   .prompt([
@@ -29,11 +41,6 @@ inquirer
       type: 'input',
       name: 'description',
       message: 'Describe your project: '
-    },
-    {
-      type: 'input',
-      name: 'table of contents',
-      message: ''
     },
     {
       type: 'input',
@@ -58,12 +65,12 @@ inquirer
     {
       type: 'input',
       name: 'tests',
-      message: ''
+      message: 'How would you test this repo?'
     },
     {
       type: 'input',
-      name: 'questions',
-      message: ''
+      name: 'email',
+      message: 'Enter email address:'
     }
   ]).then((info) => {
     const readMeContent = generateReadme(info);

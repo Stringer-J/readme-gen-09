@@ -1,9 +1,14 @@
 Get terminal to ask appropriate questions
     1. terminal asks the questions but needs to be better written
+    2. why do i need a table of contents and what is 'tests' and 'questions' for?
+    3.
 
 Format the answers
     1. basic formatting achieved
+    2. sorted out the exact formatting I wanted
+DONE====================================================================
 
 Generate readme with the answers
     1. readme generates with answers object
     2. figured out how to only write specific parts of the object to the readme
+DONE====================================================================
