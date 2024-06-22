@@ -20,3 +20,6 @@ Generate readme with the answers
     1. readme generates with answers object
     2. figured out how to only write specific parts of the object to the readme
 DONE====================================================================
+
+Film video and add to repo readme
+    1. figure out how to use screencastify
