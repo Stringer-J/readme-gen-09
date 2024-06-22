@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateReadme = ({title, description, installation, usage, credits, license,logo, tests, email}) =>
+const generateReadme = ({title, description, installation, usage, credits, license,logo, tests, user,  email}) =>
   `# ${title}\n
 ${logo}\n
 ## *Table Of Contents:*
@@ -25,6 +25,7 @@ ${license}\n
 ## *Tests:*
 ${tests}\n
 ## *Questions:*
+[${user}'s GitHub page](https://github.com/${user})\n
 Reach out to ${email} for further questions`;
 
 inquirer
@@ -68,6 +69,11 @@ inquirer
       type: 'input',
       name: 'tests',
       message: 'How would you test this repo?'
+    },
+    {
+      type: 'input',
+      name: 'user',
+      message: 'What is your github user name? '
     },
     {
       type: 'input',

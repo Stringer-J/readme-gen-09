@@ -1,6 +1,6 @@
-# Title
+# 
 
-![MIT Logo](/mitlicenselogo.png)
+![MPL Logo](/microsoftpubliclicense.png)
 
 ## *Table Of Contents:*
 [1. Description](#description)
@@ -18,22 +18,24 @@
 [7. Questions](#questions)
 
 ## *Description:* 
-it's a project
+
 
 ## *Installation:* 
-N/A
+
 
 ## *Usage:* 
-i really don't know
+
 
 ## *Credits:* 
-just me
+
 
 ## *License:* 
-MIT
+Microsoft Public License
 
 ## *Tests:*
-don't know
+
 
 ## *Questions:*
+[Stringer-J's GitHub page](https://github.com/Stringer-J)
+
 Reach out to joshstringer@live.com for further questions

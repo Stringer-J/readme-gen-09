@@ -3,7 +3,10 @@ Get terminal to ask appropriate questions
     2. why do i need a table of contents and what is 'tests' and 'questions' for?
     3. 'license' has to be a list not an input
     4. 'license' is now a list, have to add badge if statement
-    5. 
+    5. badge if statement works great after finding out how to assign new parameters to existing objects
+    6. add a section that asks for github name and prints out a link to my page
+    7. link to github page added and functional, works with any name as it should
+DONE====================================================================
 
 Format the answers
     1. basic formatting achieved
@@ -11,6 +14,7 @@ Format the answers
     3. need to make the table of contents section links
     4. added the links but they don't do anything yet
     5. finally got the links working [section](#link)
+DONE====================================================================
 
 Generate readme with the answers
     1. readme generates with answers object
