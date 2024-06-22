@@ -1,11 +1,16 @@
-title
+# README Generator
 
-Description: 
+### *Description:* 
+Example of a readme generator
 
-Installation: 
+### *Installation:* 
+N/A
 
-Usage: 
+### *Usage:* 
+You run the code and generate a readme
 
-Credits: 
+### *Credits:* 
+Josh Stringer
 
-License: 
+### *License:* 
+MIT

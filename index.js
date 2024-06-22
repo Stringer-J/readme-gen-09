@@ -2,12 +2,17 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 const generateReadme = ({title, description, installation, usage, credits, license}) =>
-  `${title}\n
-Description: ${description}\n
-Installation: ${installation}\n
-Usage: ${usage}\n
-Credits: ${credits}\n
-License: ${license}`;
+  `# ${title}\n
+### *Description:* 
+${description}\n
+### *Installation:* 
+${installation}\n
+### *Usage:* 
+${usage}\n
+### *Credits:* 
+${credits}\n
+### *License:* 
+${license}`;
 
 inquirer
   .prompt([
