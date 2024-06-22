@@ -5,6 +5,13 @@ const writeReadme = (info) => {
   fs.writeFile('READMEtest.md', info, (err) => err ? console.error(err) : console.log('README created'))
 }
 
+const generateReadme = ({title, description, installation, usage, credits, license}) =>
+  `${title}\n
+   Description: ${description}\n
+   Installation: ${installation}\n
+   Usage: ${usage}\n
+   Credits: ${credits}\n
+   License: ${license}`;
 
 inquirer
   .prompt([
@@ -44,7 +51,7 @@ inquirer
     },
     {
       type: 'input',
-      name: 'contributing',
+      name: 'credits',
       message: 'Who contributed to this project? '
     },
     {
@@ -58,6 +65,8 @@ inquirer
       message: ''
     }
   ]).then((info) => {
-    console.log(info);
-    writeReadme(info.title);
-  })
+    const readMeContent = generateReadme(info);
+
+    fs.writeFile('READMEtest.md', readMeContent, (err) => err ? console.log(err) : console.log('README created')
+    ); 
+  });
