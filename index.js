@@ -1,17 +1,13 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const writeReadme = (info) => {
-  fs.writeFile('READMEtest.md', info, (err) => err ? console.error(err) : console.log('README created'))
-}
-
 const generateReadme = ({title, description, installation, usage, credits, license}) =>
   `${title}\n
-   Description: ${description}\n
-   Installation: ${installation}\n
-   Usage: ${usage}\n
-   Credits: ${credits}\n
-   License: ${license}`;
+Description: ${description}\n
+Installation: ${installation}\n
+Usage: ${usage}\n
+Credits: ${credits}\n
+License: ${license}`;
 
 inquirer
   .prompt([

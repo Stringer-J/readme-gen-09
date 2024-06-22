@@ -1,11 +1,11 @@
-Big Project
+title
 
-   Description: This is a big project
+Description: 
 
-   Installation: N/A
+Installation: 
 
-   Usage: You realize just how big the project is
+Usage: 
 
-   Credits: Josh Stringer
+Credits: 
 
-   License: MIT
+License: 

@@ -2,6 +2,7 @@ Get terminal to ask appropriate questions
     1. terminal asks the questions but needs to be better written
 
 Format the answers
+    1. basic formatting achieved
 
 Generate readme with the answers
     1. readme generates with answers object
